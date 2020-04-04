@@ -1,0 +1,19 @@
+.Header {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.Header h1 {
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.Header h2 {
+    margin: 10px;
+    font-size: 1em;
+    font-weight: normal;
+}

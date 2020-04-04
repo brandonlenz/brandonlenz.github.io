@@ -1,0 +1,10 @@
+.About {
+    margin: 10px;
+}
+
+.FloatingHeadshot {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    text-align: center;
+}

@@ -1,16 +1,13 @@
 import React from 'react';
 
+import classes from './Navigation.module.css'
+import NavigationItem from './NavigationItem/NavigationItem';
+
 const Navigation = () => (
-    <ul>
-        <li>
-            <a href="#about">About</a>
-        </li>
-        <li>
-            <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
+    <ul className={classes.Navigation}>
+        <NavigationItem link="/about">About</NavigationItem>
+        <NavigationItem link="/portfolio">Portfolio</NavigationItem>
+        <NavigationItem link="/contact">Contact</NavigationItem>
     </ul>
 );
 

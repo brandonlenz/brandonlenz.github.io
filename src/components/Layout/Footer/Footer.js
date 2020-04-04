@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Footer = (props) => (
-    <footer>
-        copyright, resources, idk lol
+import classes from './Footer.module.css'
+
+const Footer = () => (
+    <footer className={classes.Footer}>
+        <p className={classes.Copyright}>© 2015-{new Date().getFullYear()} Brandon Lenz</p>
     </footer>
 );
 

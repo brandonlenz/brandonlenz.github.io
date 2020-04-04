@@ -1,11 +1,16 @@
 import React from 'react';
+
+import classes from './Header.module.css'
+
 import Navigation from '../../Navigation/Navigation';
 
-const Header = (props) => (
+const Header = () => (
     <header>
-        <h1>Brandon Lenz</h1>
-        <h2>Engineer</h2>
-        <Navigation/>
+        <div className={classes.Header}>
+            <h1>Brandon Lenz</h1>
+            <h2>Engineer</h2>
+        </div>
+        <Navigation />
     </header>
 );
 
