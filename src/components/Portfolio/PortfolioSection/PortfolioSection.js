@@ -14,12 +14,10 @@ class PortfolioSection extends Component {
 
     render() {
         return (
-            <div className={classes.PortfolioSection}>
+            <>
                 <h3 onClick={this.toggleSection}>{this.props.name}</h3>
-                <div className={classes.PortfolioItems}>
-                    {this.state.open ? this.props.children : null}
-                </div>
-            </div>
+                {this.state.open ? this.props.children : null}
+            </>
         )
     }
 }
