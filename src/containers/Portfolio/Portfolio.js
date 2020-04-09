@@ -16,7 +16,7 @@ const portfolio = { //TODO: Get from firebase?
                 },
                 {
                     name: 'Angular',
-                    competence: 7.5
+                    competence: 7
                 },
                 {
                     name: 'JavaScript',
@@ -49,11 +49,11 @@ const portfolio = { //TODO: Get from firebase?
                 },
                 {
                     name: 'Python',
-                    competence: 7
+                    competence: 6
                 },
                 {
                     name: 'Swift',
-                    competence: 4
+                    competence: 5
                 },
                 {
                     name: 'Grails',

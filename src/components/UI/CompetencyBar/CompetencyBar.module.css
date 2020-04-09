@@ -10,7 +10,7 @@
     background-size: 100% 1px;
     background-repeat: no-repeat;
     background-position-y: center;
-    animation: constructBar 1s ease-out;
+    animation: constructBar 1s normal;
 }
 
 .Competence {
