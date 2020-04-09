@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import classes from './PortfolioSection.module.css'
+import './PortfolioSection.module.css'
 
 class PortfolioSection extends Component {
 
     state = {
-        open: true //TODO: default closed once styled?
+        open: true
     }
 
     toggleSection = () => (

@@ -1,9 +1,6 @@
 h3 {
+    margin: 30px 0 10px 0;
     font-weight: normal;
     grid-column-start: span 2;
     text-align: center;
-}
-
-.PortfolioItems {
-    margin: 10px 0;
 }
