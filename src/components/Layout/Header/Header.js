@@ -8,7 +8,7 @@ import Navigation from '../../Navigation/Navigation';
 
 const Header = () => (
     <header
-        className={classes.HeaderSection}
+        className={classes.Header}
         style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.75) 100%), url(${background})`
         }}>
