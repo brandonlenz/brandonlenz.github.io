@@ -1,19 +1,67 @@
-.Header {
-    margin: 0;
-    padding: 10px 0;
+.HeaderSection {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.HeaderText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, .9);
+    flex-grow: 1;
 }
 
-.Header h1 {
-    margin: 10px;
+.FirstName {
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.LastName {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.Title {
+    margin-top: 20px;
     font-size: 1.5em;
-    font-weight: normal;
+    font-weight: 100;
+    font-variant-caps: all-small-caps;
 }
 
-.Header h2 {
-    margin: 10px;
-    font-size: 1em;
-    font-weight: normal;
+.Caret {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    align-self: center;
+    color: white;
+    font-size: 3em;
+    transition: all 0.25s ease-out;
+}
+
+.Caret:hover {
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.25);
+}
+
+@media (min-width: 600px) {
+    .FirstName {
+        font-size: 5em;
+
+    }
+
+    .LastName {
+        font-size: 4em;
+    }
+
+    .Title {
+        font-size: 2em;
+    }
 }
