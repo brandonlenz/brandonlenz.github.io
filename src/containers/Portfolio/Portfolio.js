@@ -83,13 +83,13 @@ const portfolio = { //TODO: Get from firebase?
             ]
         }
     ]
-}
+};
 
 class Portfolio extends Component {
 
     state = {
         portfolio: portfolio
-    }
+    };
 
     convertPortfolioToElements() {
         return this.state.portfolio.sections
@@ -110,13 +110,13 @@ class Portfolio extends Component {
     }
 
     render() {
-        const portfolioSections = this.convertPortfolioToElements()
+        const portfolioSections = this.convertPortfolioToElements();
 
         return (
             <div className={classes.Portfolio}>
                 {portfolioSections}
             </div>
-        )
+        );
     }
 }
 

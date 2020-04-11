@@ -6,11 +6,11 @@ class PortfolioSection extends Component {
 
     state = {
         open: true
-    }
+    };
 
     toggleSection = () => (
         this.setState({ open: ! this.state.open })
-    )
+    );
 
     render() {
         return (
@@ -18,7 +18,7 @@ class PortfolioSection extends Component {
                 <h3 onClick={this.toggleSection}>{this.props.name}</h3>
                 {this.state.open ? this.props.children : null}
             </>
-        )
+        );
     }
 }
 
