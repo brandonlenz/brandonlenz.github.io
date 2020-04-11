@@ -4,10 +4,10 @@ import classes from './PortfolioItem.module.css'
 
 import CompetencyBar from '../../UI/CompetencyBar/CompetencyBar';
 
-const PortfolioItem = (props) => (
+const PortfolioItem = ({name, competence}) => (
     <>
-        <label className={classes.Label}>{props.name}</label>
-        <CompetencyBar competence={props.competence} />
+        <label className={classes.Label}>{name}</label>
+        <CompetencyBar className={classes.CompetencyBar} competence={competence} />
     </>
 );
 

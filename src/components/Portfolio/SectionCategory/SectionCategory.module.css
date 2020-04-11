@@ -1,0 +1,15 @@
+.SectionCategory {
+    display: contents;
+}
+
+.CategoryName {
+    box-sizing: border-box;
+    border-right: 1px solid white;
+    white-space: pre-wrap;
+    padding-right: 10px;
+    align-self: stretch;
+}
+
+.SectionCategory:hover {
+    color: pink;
+}

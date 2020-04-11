@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-import './PortfolioSection.module.css'
+import classes from './PortfolioSection.module.css'
+
+import SectionCategory from '../SectionCategory/SectionCategory';
 
 class PortfolioSection extends Component {
 
@@ -12,11 +14,22 @@ class PortfolioSection extends Component {
         this.setState({ open: ! this.state.open })
     );
 
+    getCategories = () => (
+        this.props.categories
+            .map(category => (
+                    <SectionCategory
+                        key={category.name}
+                        name={category.name}
+                        categoryItems={category.items}/>
+            ))
+            .reduce((prev, curr) => [prev, <div className={classes.Separator} />, curr])
+    );
+
     render() {
         return (
             <>
-                <h3 onClick={this.toggleSection}>{this.props.name}</h3>
-                {this.state.open ? this.props.children : null}
+                <div className={classes.SectionName} onClick={this.toggleSection}>{this.props.name}</div>
+                {this.state.open ? this.getCategories() : null}
             </>
         );
     }

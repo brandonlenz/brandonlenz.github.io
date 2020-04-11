@@ -5,8 +5,8 @@
     color: white;
 
     display: grid;
-    grid-template-columns: auto .6fr;
-    grid-gap: 5px 10px;
+    grid-template-columns: auto auto .8fr;
+    gap: 5px 10px;
     justify-content: center;
     align-items: center;
 }

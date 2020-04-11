@@ -1,6 +1,11 @@
-h3 {
+.SectionName {
     margin: 30px 0 10px 0;
-    font-weight: normal;
-    grid-column-start: span 2;
+    grid-column-start: span 3;
     text-align: center;
+}
+
+.Separator {
+    display: block;
+    grid-column-start: span 3;
+    height: 5px;
 }
