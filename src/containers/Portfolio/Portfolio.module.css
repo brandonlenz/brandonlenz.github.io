@@ -1,12 +1,11 @@
 .Portfolio {
-    margin: 10px 0;
-    padding: 10px 0;
-    background: rgba(0, 0, 0, .9);
-    color: white;
-
     display: grid;
-    grid-template-columns: auto auto .8fr;
+    grid-template-columns: auto auto 1fr;
     gap: 5px 10px;
     justify-content: center;
     align-items: center;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, .9);
+    color: white;
 }

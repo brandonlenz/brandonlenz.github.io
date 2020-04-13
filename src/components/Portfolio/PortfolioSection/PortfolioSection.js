@@ -22,7 +22,7 @@ class PortfolioSection extends Component {
                         name={category.name}
                         categoryItems={category.items}/>
             ))
-            .reduce((prev, curr) => [prev, <div className={classes.Separator} />, curr])
+            .reduce((acc, curr, index) => [acc, <div key={index} className={classes.Separator} />, curr])
     );
 
     render() {
