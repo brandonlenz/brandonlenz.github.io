@@ -1,0 +1,25 @@
+.InlineLink {
+    display: inline-block;
+    color: rgb(240, 100, 10);
+    text-decoration: none;
+}
+
+.InlineLink:after {
+    display: block;
+    background: linear-gradient(
+            to right,
+            rgb(105, 0, 130),
+            rgb(180, 80, 115),
+            rgb(200, 55, 85),
+            rgb(240, 100, 10),
+            rgb(230,145,5)
+    );
+    content: '';
+    width: 0;
+    height: 1px;
+    transition: 0.25s ease-out;
+}
+
+.InlineLink:hover:after {
+    width: 100%;
+}
