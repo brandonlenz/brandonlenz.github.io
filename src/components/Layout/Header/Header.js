@@ -6,7 +6,7 @@ import background from '../../../assets/images/atlanta_skyline_piedmont_park_chr
 
 import Navigation from '../../Navigation/Navigation';
 
-const Header = () => (
+const Header = ({ onScrollToNext }) => (
     <header
         className={classes.Header}
         style={{
@@ -18,7 +18,7 @@ const Header = () => (
             <div className={classes.Title}>Engineer</div>
         </div>
         {/*<Navigation /> //TODO: Delete if not using navigation*/}
-        <MdExpandMore className={classes.Caret} />
+        <MdExpandMore className={classes.Caret} onClick={onScrollToNext}/>
     </header>
 );
 

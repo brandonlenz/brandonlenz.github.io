@@ -1,6 +1,6 @@
 .About {
-    margin: 50px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 50px 20px;
     max-width: 600px;
 }
 
@@ -21,4 +21,3 @@
 .About p {
     font-size: 1.1em;
 }
-
