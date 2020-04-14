@@ -4,7 +4,7 @@ import classes from './Portfolio.module.css'
 
 import PortfolioSection from '../../components/Portfolio/PortfolioSection/PortfolioSection';
 
-const portfolio = { //TODO: Get from firebase?
+const portfolio = {
     sections: [
         {
             name: 'Front-end',

@@ -1,5 +1,5 @@
 .SectionName {
-    margin: 40px 0 15px 0;
+    margin: 50px 0 15px 0;
     grid-column-start: span 3;
     text-align: center;
     font-size: 1.25em;
@@ -8,5 +8,5 @@
 .Separator {
     display: block;
     grid-column-start: span 3;
-    height: 5px;
+    height: 10px;
 }

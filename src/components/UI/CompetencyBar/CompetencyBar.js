@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import classes from './CompetencyBar.module.css'
 

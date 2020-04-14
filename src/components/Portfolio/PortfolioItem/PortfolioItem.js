@@ -7,7 +7,7 @@ import CompetencyBar from '../../UI/CompetencyBar/CompetencyBar';
 const PortfolioItem = ({name, competence}) => (
     <>
         <label className={classes.Label}>{name}</label>
-        <CompetencyBar className={classes.CompetencyBar} competence={competence} />
+        <CompetencyBar competence={competence} />
     </>
 );
 

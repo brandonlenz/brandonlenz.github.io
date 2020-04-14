@@ -15,14 +15,14 @@ const SectionCategory = ({name, categoryItems}) => {
         ));
 
     return (
-        <div className={classes.SectionCategory}>
+        <>
             <div
                 className={classes.CategoryName}
                 style={{ gridRowStart: `span ${categoryItems.length}` }} >
                 {name}
             </div>
             {portfolioItems}
-        </div>
+        </>
     );
 };
 
