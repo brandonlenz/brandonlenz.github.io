@@ -12,7 +12,7 @@ const About = () => (
         </div>
         <div className={classes.HelloHeader}>Hi, I'm Brandon!</div>
         <p>
-            Hello and welcome to my website! I'm an engineer with a passion for code and food. I love to optimize both
+            I'm an engineer with a passion for code and food. I love to optimize both
             form and function of whatever I'm currently working on. When cooking I want my food to look and taste
             delicious. Likewise, when coding I want my work's aesthetic and functionality to go hand in hand.
         </p>
