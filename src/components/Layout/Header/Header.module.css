@@ -18,7 +18,6 @@
 }
 
 .FirstName {
-    margin-top: 20px;
     font-size: 3em;
     font-weight: 300;
 }
@@ -36,6 +35,8 @@
 }
 
 .Caret {
+    position: absolute;
+    bottom: 0;
     margin-bottom: 20px;
     box-sizing: border-box;
     border-radius: 50%;
@@ -50,6 +51,19 @@
     border: 1px solid white;
     background: rgba(255, 255, 255, 0.1);
     transform: scale(1.25);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
 }
 
 @media (min-width: 600px) {
