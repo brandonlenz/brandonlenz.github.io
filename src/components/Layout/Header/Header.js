@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdExpandMore } from 'react-icons/md';
+import { FaChevronDown } from 'react-icons/fa';
 
 import classes from './Header.module.css'
 import background from '../../../assets/images/atlanta_skyline_piedmont_park_christopher_alvarenga_smaller.jpg'
@@ -16,7 +16,7 @@ const Header = ({ onScrollToNext }) => (
                 <div className={classes.LastName}>Lenz</div>
                 <div className={classes.Title}>Engineer</div>
             </div>
-            <MdExpandMore className={classes.Caret} onClick={onScrollToNext}/>
+            <FaChevronDown className={classes.Caret} onClick={onScrollToNext}/>
         </header>
     </>
 );

@@ -38,6 +38,7 @@
     position: absolute;
     bottom: 0;
     margin-bottom: 20px;
+    padding: 5px;
     box-sizing: border-box;
     border-radius: 50%;
     align-self: center;
