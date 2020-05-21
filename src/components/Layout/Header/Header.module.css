@@ -54,19 +54,6 @@
     transform: scale(1.25);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    animation-name: fadeIn;
-}
-
 @media (min-width: 600px) {
     .FirstName {
         font-size: 5em;
