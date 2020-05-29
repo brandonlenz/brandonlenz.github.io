@@ -6,7 +6,7 @@ const ContactMethod = (props) => {
     const Icon = props.icon;
     return (
         <div className={classes.ContactMethod} onClick={() => window.open(props.url, "_blank")}>
-            <Icon className={ classes.Icon }/>
+            <Icon className={ classes.Icon } />
         </div>
     );
 };
