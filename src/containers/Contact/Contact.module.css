@@ -12,22 +12,6 @@
 
 .ContactMethods {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.ContactMethod {
-    margin: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    background-color: purple;
-}
-
-.ContactMethod a {
-    text-decoration: none;
-}
-
-.Icon {
-    color: white;
-    font-size: 3em;
 }

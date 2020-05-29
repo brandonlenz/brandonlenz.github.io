@@ -1,0 +1,21 @@
+.ContactMethod {
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid purple;
+}
+
+.Icon {
+    color: purple;
+    font-size: 3em;
+}
+
+.ContactMethod:hover {
+    cursor: pointer;
+    background-color: purple;
+}
+
+.ContactMethod:hover .Icon {
+    color: white;
+}
