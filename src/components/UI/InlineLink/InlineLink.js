@@ -2,8 +2,8 @@ import React from 'react';
 
 import classes from './InlineLink.module.css'
 
-const InlineLink = ({ link, children }) => (
-    <a className={classes.InlineLink} href={link}>{children}</a>
+const InlineLink = ({ url, text }) => (
+    <a className={classes.InlineLink} onClick={() => window.open(url, "_blank")}>{text}</a>
 );
 
 export default InlineLink;

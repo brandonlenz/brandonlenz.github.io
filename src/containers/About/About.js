@@ -19,7 +19,7 @@ const About = () => (
         <p>
             Think of this page as a creative portfolio where I have the opportunity
             to showcase some of the technologies I've learned. For a full professional summary and resume feel free to head over
-            to my <InlineLink link="https://www.linkedin.com/in/lenzbrandon/">LinkedIn</InlineLink>.
+            to my <InlineLink text="LinkedIn" url="https://www.linkedin.com/in/lenzbrandon/" />.
         </p>
     </div>
 );

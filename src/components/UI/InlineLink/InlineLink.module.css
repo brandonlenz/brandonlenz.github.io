@@ -1,7 +1,11 @@
 .InlineLink {
     display: inline-block;
-    color: rgb(105, 0, 130);
+    color: rgb(220, 70, 50);
     text-decoration: none;
+}
+
+.InlineLink:hover {
+    cursor: pointer;
 }
 
 .InlineLink:after {
@@ -16,7 +20,7 @@
     );
     content: '';
     width: 0;
-    height: 1px;
+    height: 2px;
     transition: 0.25s ease-out;
 }
 
