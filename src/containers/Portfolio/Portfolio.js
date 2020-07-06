@@ -77,6 +77,10 @@ const portfolio = {
                             competence: 6
                         },
                         {
+                            name: 'Ruby',
+                            competence: 5.5
+                        },
+                        {
                             name: 'Swift',
                             competence: 5
                         }
@@ -92,6 +96,10 @@ const portfolio = {
                         {
                             name: 'Spring',
                             competence: 8
+                        },
+                        {
+                            name: 'Rails',
+                            competence: 5
                         }
                     ]
                 },

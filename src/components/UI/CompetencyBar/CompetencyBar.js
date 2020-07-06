@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import IntersectionVisible from 'react-intersection-visible'
 
 import classes from './CompetencyBar.module.css'
 
-const CompetencyBar = (props) => {
+const CompetencyBar = ({competence}) => {
 
-    const [competence, setCompetence] = useState(0);
-
-    useEffect(() => setCompetence(props.competence),[props.competence]);
+    const [displayedCompetence, setDisplayedCompetence] = useState(competence);
 
     return (
-        <div className={classes.CompetencyBar}>
-            <div className={classes.Competence} style={{ width: `${competence / 10 * 100}%` }} />
-        </div>
+        <IntersectionVisible
+            onShow={() => setDisplayedCompetence(competence)}
+            onHide={() => setDisplayedCompetence(0)}>
+            <div className={classes.CompetencyBar}>
+                <div className={classes.Competence} style={{ width: `${displayedCompetence / 10 * 100}%` }} />
+            </div>
+        </IntersectionVisible>
     );
 };
 
