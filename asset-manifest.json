@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0dbfc30d.chunk.css",
+    "main.js": "/static/js/main.0fc4f79a.chunk.js",
+    "main.js.map": "/static/js/main.0fc4f79a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4476f73d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4476f73d.js.map",
+    "static/css/2.d9ee7e2f.chunk.css": "/static/css/2.d9ee7e2f.chunk.css",
+    "static/js/2.5e85b71f.chunk.js": "/static/js/2.5e85b71f.chunk.js",
+    "static/js/2.5e85b71f.chunk.js.map": "/static/js/2.5e85b71f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9a723ff1bdf86e54dda218483013f54a.js": "/precache-manifest.9a723ff1bdf86e54dda218483013f54a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d9ee7e2f.chunk.css.map": "/static/css/2.d9ee7e2f.chunk.css.map",
+    "static/css/main.0dbfc30d.chunk.css.map": "/static/css/main.0dbfc30d.chunk.css.map",
+    "static/js/2.5e85b71f.chunk.js.LICENSE.txt": "/static/js/2.5e85b71f.chunk.js.LICENSE.txt",
+    "static/media/Headshot_300.png": "/static/media/Headshot_300.e55b9244.png",
+    "static/media/atlanta_skyline_piedmont_park_christopher_alvarenga_smaller.jpg": "/static/media/atlanta_skyline_piedmont_park_christopher_alvarenga_smaller.3398e9a1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4476f73d.js",
+    "static/css/2.d9ee7e2f.chunk.css",
+    "static/js/2.5e85b71f.chunk.js",
+    "static/css/main.0dbfc30d.chunk.css",
+    "static/js/main.0fc4f79a.chunk.js"
+  ]
+}
