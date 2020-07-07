@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaRegEnvelope, FaLinkedinIn } from 'react-icons/fa'
+import { FaRegEnvelope, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 import classes from './Contact.module.css'
 
@@ -16,6 +16,9 @@ const Contact = () => (
             <ContactMethod
                 url="http://linkedin.com/in/lenzbrandon"
                 icon={FaLinkedinIn}/>
+            <ContactMethod
+                url="https://github.com/brandonlenz"
+                icon={FaGithub}/>
         </div>
     </div>
 );
