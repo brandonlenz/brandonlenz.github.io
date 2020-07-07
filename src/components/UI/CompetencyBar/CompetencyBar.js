@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import IntersectionVisible from 'react-intersection-visible'
 
 import classes from './CompetencyBar.module.css'
