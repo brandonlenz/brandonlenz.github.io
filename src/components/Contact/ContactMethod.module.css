@@ -5,6 +5,7 @@
     box-sizing: border-box;
     border-radius: 50%;
     border: 1px solid rgb(220, 70, 50);
+    background-color: white;
     transition: background-color  0.25s ease-out,
                 transform 0.25s ease-out;
 }
