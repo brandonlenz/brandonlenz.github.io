@@ -6,14 +6,6 @@ import SectionCategory from '../SectionCategory/SectionCategory';
 
 class PortfolioSection extends Component {
 
-    state = {
-        open: true
-    };
-
-    toggleSection = () => (
-        this.setState({ open: ! this.state.open })
-    );
-
     getCategories = () => (
         this.props.categories
             .map(category => (
@@ -28,8 +20,8 @@ class PortfolioSection extends Component {
     render() {
         return (
             <>
-                <div className={classes.SectionName} onClick={this.toggleSection}>{this.props.name}</div>
-                {this.state.open ? this.getCategories() : null}
+                <div className={classes.SectionName}>{this.props.name}</div>
+                {this.getCategories()}
             </>
         );
     }
