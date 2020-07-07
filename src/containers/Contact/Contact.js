@@ -7,7 +7,7 @@ import ContactMethod from '../../components/Contact/ContactMethod';
 
 const Contact = () => (
     <div className={classes.Contact}>
-        <div className={classes.ContactHeader}>Want to get in contact?</div>
+        <div className={classes.ContactHeader}>Let's connect.</div>
 
         <div className={classes.ContactMethods}>
             <ContactMethod
