@@ -2,6 +2,7 @@
     margin: 0 auto;
     padding: 50px 20px;
     max-width: 600px;
+    overflow-x: hidden;
 }
 
 .FloatingHeadshot {
