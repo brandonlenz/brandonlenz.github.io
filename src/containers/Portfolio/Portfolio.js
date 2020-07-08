@@ -78,11 +78,11 @@ const portfolio = {
                         },
                         {
                             name: 'Ruby',
-                            competence: 5.5
+                            competence: 5
                         },
                         {
                             name: 'Swift',
-                            competence: 5
+                            competence: 4
                         }
                     ]
                 },
@@ -90,11 +90,11 @@ const portfolio = {
                     name: 'Frameworks',
                     items: [
                         {
-                            name: 'Grails',
+                            name: 'Spring',
                             competence: 8
                         },
                         {
-                            name: 'Spring',
+                            name: 'Grails',
                             competence: 8
                         },
                         {
