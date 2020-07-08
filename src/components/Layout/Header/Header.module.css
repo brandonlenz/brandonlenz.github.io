@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
     color: white;
     flex-grow: 1;
@@ -65,5 +67,30 @@
 
     .Title {
         font-size: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .HeaderText {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .FirstName {
+        font-size: 6em;
+    }
+
+    .FirstName::after {
+        content: " ";
+        white-space: pre;
+    }
+
+    .LastName {
+        font-size: 6em;
+    }
+
+    .Title {
+        font-size: 2.5em;
+        flex-basis: 100%;
     }
 }
