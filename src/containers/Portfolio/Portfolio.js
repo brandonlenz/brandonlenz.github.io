@@ -138,7 +138,9 @@ class Portfolio extends Component {
 
         return (
             <div className={classes.Portfolio}>
-                {portfolioSections}
+                <div className={classes.PortfolioSections}>
+                    {portfolioSections}
+                </div>
             </div>
         );
     }
