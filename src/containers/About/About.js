@@ -21,16 +21,26 @@ const About = () => (
 
             <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
                 <p>
-                    I'm an engineer with a passion for code and food. I love to optimize both
-                    form and function of whatever I'm currently working on. When cooking I want my food to look and taste
-                    delicious. Likewise, when coding I want my work's aesthetic and functionality to go hand in hand.
+                    I'm an engineer with a passion for building tools and services that are as intuitive to use as they
+                    are to develop and maintain.
+                    Technology is a powerful shaping force of modern society, and I believe that engineers have a
+                    responsibility to use our skills in pursuit of improving the livelihoods of those around us.
                 </p>
             </ScrollAnimation>
             <ScrollAnimation animateIn='fadeInRight' animateOnce={true}>
                 <p>
-                    Think of this page as a creative portfolio where I have the opportunity
-                    to showcase some of the technologies I've learned. For a full professional summary and resume feel free to head over
-                    to my <InlineLink text="LinkedIn" url="https://www.linkedin.com/in/lenzbrandon/" />.
+                    I know that a truly great experience, the kind that can have a real, positive impact, is achieved
+                    through optimization of both form and function.
+                    As an engineer, I understand that the best way to sustainably serve such an experience at scale is
+                    to be conscientious in every step of the process.
+                    After all, your fellow developers are users too.
+                </p>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
+                <p>
+                    Think of this page as a creative portfolio where I have the opportunity to showcase some of the
+                    technologies I've learned. For a full professional summary and resume feel free to head over to
+                    my <InlineLink text="LinkedIn" url="https://www.linkedin.com/in/lenzbrandon/" />.
                 </p>
             </ScrollAnimation>
         </div>
