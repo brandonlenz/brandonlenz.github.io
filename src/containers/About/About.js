@@ -9,7 +9,7 @@ import InlineLink from '../../components/UI/InlineLink/InlineLink';
 const About = () => (
     <div className={classes.About}>
         <div className={classes.Content}>
-            <ScrollAnimation animateIn='fadeInDown' animateOnce={true}>
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                 <div className={classes.FloatingHeadshot}>
                     <Headshot />
                 </div>
