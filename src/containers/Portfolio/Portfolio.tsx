@@ -5,155 +5,123 @@ import classes from './Portfolio.module.css'
 
 import PortfolioSection from '../../components/Portfolio/PortfolioSection/PortfolioSection';
 
-interface Named {
+class Item {
+
     name: string;
-}
-
-interface Item extends Named {
     competence: number;
-}
 
-interface Category extends Named {
-    items: Array<Item>;
-}
-
-interface Section extends Named {
-    categories: Array<Category>;
-}
-
-const sections: Array<Section> = [
-    {
-        name: 'Front-end',
-        categories: [
-            {
-                name: 'Languages',
-                items: [
-                    {
-                        name: 'JavaScript',
-                        competence: 8.5
-                    },
-                    {
-                        name: 'HTML',
-                        competence: 9
-                    },
-                    {
-                        name: 'CSS',
-                        competence: 8
-                    }
-                ]
-            },
-            {
-                name: 'Libraries &\nFrameworks',
-                items: [
-                    {
-                        name: 'React',
-                        competence: 9
-                    },
-                    {
-                        name: 'Angular',
-                        competence: 7
-                    },
-                    {
-                        name: 'AngularJS',
-                        competence: 5
-                    }
-                ]
-            },
-            {
-                name: 'Testing',
-                items: [
-                    {
-                        name: 'Jest',
-                        competence: 8
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        name: 'Back-end',
-        categories: [
-            {
-                name: 'Languages',
-                items: [
-                    {
-                        name: 'Java',
-                        competence: 9.5
-                    },
-                    {
-                        name: 'Groovy',
-                        competence: 9
-                    },
-                    {
-                        name: 'C#',
-                        competence: 7
-                    },
-                    {
-                        name: 'Python',
-                        competence: 6
-                    },
-                    {
-                        name: 'Ruby',
-                        competence: 5
-                    },
-                    {
-                        name: 'Swift',
-                        competence: 4
-                    }
-                ]
-            },
-            {
-                name: 'Frameworks',
-                items: [
-                    {
-                        name: 'Spring',
-                        competence: 8
-                    },
-                    {
-                        name: 'Grails',
-                        competence: 8
-                    },
-                    {
-                        name: 'Rails',
-                        competence: 5
-                    }
-                ]
-            },
-            {
-                name: 'Testing',
-                items: [
-                    {
-                        name: 'JUnit',
-                        competence: 9
-                    },
-                    {
-                        name: 'Spock',
-                        competence: 9
-                    }
-                ]
-            }
-        ]
+    constructor(name: string, competence: number) {
+        this.name = name;
+        this.competence = competence;
     }
-];
-
-interface PortfolioState {
-    sections: Array<Section>
 }
 
-class Portfolio extends Component<{}, PortfolioState> {
+class Category {
 
-    state = {
-        sections: sections
-    };
+    name: string;
+    items: Array<Item> = [];
 
-    render() {
-        const portfolioSections = this.state.sections
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    addItem(name: string, competency: number): Category {
+        this.items.push(new Item(name, competency));
+        return this;
+    }
+}
+
+class Section {
+
+    name: string;
+    categories: Array<Category> = [];
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    addCategory(category: Category): Section {
+        this.categories.push(category);
+        return this;
+    }
+}
+
+class PortfolioObject {
+
+    sections: Array<Section> = [];
+
+    addSection(section: Section): PortfolioObject {
+        this.sections.push(section);
+        return this;
+    }
+
+    toJSX(): Array<JSX.Element> {
+        return this.sections
             .map(section => (
                 <PortfolioSection
                     key={section.name}
                     name={section.name}
                     categories={section.categories} />
             ));
+    }
+}
+
+const portfolio: PortfolioObject = new PortfolioObject()
+    .addSection(
+        new Section('Front-end')
+            .addCategory(
+                new Category('Languages')
+                    .addItem('JavaScript', 8.5)
+                    .addItem('HTML', 9)
+                    .addItem('CSS', 8)
+            )
+            .addCategory(
+                new Category('Libraries &\nFrameworks')
+                    .addItem('React', 9)
+                    .addItem('Angular', 7)
+                    .addItem('AngularJS', 5)
+            )
+            .addCategory(
+                new Category('Testing')
+                    .addItem('Jest', 8)
+            )
+    )
+    .addSection(
+        new Section('Back-end')
+            .addCategory(
+                new Category('Languages')
+                    .addItem('Java', 9.5)
+                    .addItem('Groovy', 9)
+                    .addItem('C#', 7)
+                    .addItem('Python', 6)
+                    .addItem('Ruby', 5)
+                    .addItem('Swift', 4)
+            )
+            .addCategory(
+                new Category('Frameworks')
+                    .addItem('Spring', 8)
+                    .addItem('Grails', 8)
+                    .addItem('Rails',5)
+            )
+            .addCategory(
+                new Category('Testing')
+                    .addItem('JUnit', 9)
+                    .addItem('Spock', 9)
+            )
+    );
+
+interface PortfolioState {
+    portfolio: PortfolioObject
+}
+
+class Portfolio extends Component<{}, PortfolioState> {
+
+    state = {
+        portfolio: portfolio
+    };
+
+    render() {
+        const portfolioSections = this.state.portfolio.toJSX();
 
         return (
             <div className={classes.Portfolio}>
