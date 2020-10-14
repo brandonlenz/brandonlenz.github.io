@@ -1,77 +1,28 @@
 import * as React from 'react'
-import { Component } from 'react';
+import { Component, ReactNode } from 'react';
 
 import classes from './Portfolio.module.css'
 
-import PortfolioSection from '../../components/Portfolio/PortfolioSection/PortfolioSection';
+import PortfolioSection, { Section } from "../../components/Portfolio/PortfolioSection/PortfolioSection";
+import { Category } from "../../components/Portfolio/SectionCategory/SectionCategory";
 
-class Item {
-
-    name: string;
-    competence: number;
-
-    constructor(name: string, competence: number) {
-        this.name = name;
-        this.competence = competence;
-    }
-}
-
-class Category {
-
-    name: string;
-    items: Array<Item> = [];
-
-    constructor(name: string) {
-        this.name = name;
-    }
-
-    addItem(name: string, competency: number): Category {
-        this.items.push(new Item(name, competency));
-        return this;
-    }
-}
-
-class Section {
-
-    name: string;
-    categories: Array<Category> = [];
-
-    constructor(name: string) {
-        this.name = name;
-    }
-
-    addCategory(category: Category): Section {
-        this.categories.push(category);
-        return this;
-    }
-}
-
-class PortfolioObject {
+class PortfolioModel {
 
     sections: Array<Section> = [];
 
-    addSection(section: Section): PortfolioObject {
+    addSection(section: Section): PortfolioModel {
         this.sections.push(section);
         return this;
     }
-
-    toJSX(): Array<JSX.Element> {
-        return this.sections
-            .map(section => (
-                <PortfolioSection
-                    key={section.name}
-                    name={section.name}
-                    categories={section.categories} />
-            ));
-    }
 }
 
-const portfolio: PortfolioObject = new PortfolioObject()
+const portfolio: PortfolioModel = new PortfolioModel()
     .addSection(
         new Section('Front-end')
             .addCategory(
                 new Category('Languages')
                     .addItem('JavaScript', 8.5)
+                    .addItem('TypeScript', 8)
                     .addItem('HTML', 9)
                     .addItem('CSS', 8)
             )
@@ -105,13 +56,13 @@ const portfolio: PortfolioObject = new PortfolioObject()
             )
             .addCategory(
                 new Category('Testing')
+                    .addItem('Spock', 9.5)
                     .addItem('JUnit', 9)
-                    .addItem('Spock', 9)
             )
     );
 
 interface PortfolioState {
-    portfolio: PortfolioObject
+    portfolio: PortfolioModel
 }
 
 class Portfolio extends Component<{}, PortfolioState> {
@@ -121,10 +72,17 @@ class Portfolio extends Component<{}, PortfolioState> {
     };
 
     render() {
+        const portfolioSections: ReactNode = this.state.portfolio.sections
+            .map(section => (
+                <PortfolioSection
+                    key={section.name}
+                    section={section} />
+            ));
+
         return (
             <div className={classes.Portfolio}>
                 <div className={classes.PortfolioSections}>
-                    {this.state.portfolio.toJSX()}
+                    {portfolioSections}
                 </div>
             </div>
         );
