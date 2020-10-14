@@ -121,12 +121,10 @@ class Portfolio extends Component<{}, PortfolioState> {
     };
 
     render() {
-        const portfolioSections = this.state.portfolio.toJSX();
-
         return (
             <div className={classes.Portfolio}>
                 <div className={classes.PortfolioSections}>
-                    {portfolioSections}
+                    {this.state.portfolio.toJSX()}
                 </div>
             </div>
         );
