@@ -31,8 +31,8 @@ class PortfolioSection extends Component<PortfolioSectionProps> {
             <SectionCategory
                 key={category.name}
                 category={category} />
-            ))
-            .reduce((acc, curr, index) => [acc, <div key={index} className={classes.Separator} />, curr])
+        ))
+        .reduce((acc, curr, index) => [acc, <div key={index} className={classes.Separator} />, curr])
     );
 
     render() {
