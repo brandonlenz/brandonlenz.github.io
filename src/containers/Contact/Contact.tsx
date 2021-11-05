@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { FaRegEnvelope, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 import classes from './Contact.module.css'
@@ -6,7 +6,7 @@ import classes from './Contact.module.css'
 import ContactMethod from '../../components/Contact/ContactMethod';
 
 const Contact = () => (
-    <div className={classes.Contact}>
+    <div className={classes.Contact} data-testid="contact-section">
         <div className={classes.ContactHeader}>Let's connect.</div>
 
         <div className={classes.ContactMethods}>

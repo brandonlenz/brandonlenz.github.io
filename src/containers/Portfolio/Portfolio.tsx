@@ -99,7 +99,7 @@ class Portfolio extends Component<{}, PortfolioState> {
             ));
 
         return (
-            <div className={classes.Portfolio}>
+            <div className={classes.Portfolio} data-testid="portfolio-section">
                 <div className={classes.PortfolioSections}>
                     {portfolioSections}
                 </div>

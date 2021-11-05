@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import classes from './About.module.css';
@@ -7,7 +7,7 @@ import Headshot from '../../components/Media/Headshot/Headshot';
 import InlineLink from '../../components/UI/InlineLink/InlineLink';
 
 const About = () => (
-    <div className={classes.About}>
+    <div className={classes.About} data-testid="about-section">
         <div className={classes.Content}>
             <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
                 <div className={classes.FloatingHeadshot}>
