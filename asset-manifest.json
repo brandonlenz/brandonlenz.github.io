@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1431e228.chunk.css",
+    "main.js": "/static/js/main.67b12540.chunk.js",
+    "main.js.map": "/static/js/main.67b12540.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.902a0afa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.902a0afa.js.map",
+    "static/css/2.a1596f27.chunk.css": "/static/css/2.a1596f27.chunk.css",
+    "static/js/2.f991c17b.chunk.js": "/static/js/2.f991c17b.chunk.js",
+    "static/js/2.f991c17b.chunk.js.map": "/static/js/2.f991c17b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.a1596f27.chunk.css.map": "/static/css/2.a1596f27.chunk.css.map",
+    "static/css/main.1431e228.chunk.css.map": "/static/css/main.1431e228.chunk.css.map",
+    "static/js/2.f991c17b.chunk.js.LICENSE.txt": "/static/js/2.f991c17b.chunk.js.LICENSE.txt",
+    "static/media/Headshot_300.529b9771.png": "/static/media/Headshot_300.529b9771.png",
+    "static/media/atlanta_skyline_piedmont_park_christopher_alvarenga_smaller.3b4c6745.jpg": "/static/media/atlanta_skyline_piedmont_park_christopher_alvarenga_smaller.3b4c6745.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.902a0afa.js",
+    "static/css/2.a1596f27.chunk.css",
+    "static/js/2.f991c17b.chunk.js",
+    "static/css/main.1431e228.chunk.css",
+    "static/js/main.67b12540.chunk.js"
+  ]
+}
