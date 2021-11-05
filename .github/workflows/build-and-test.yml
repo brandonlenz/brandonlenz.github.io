@@ -3,7 +3,7 @@ name: Build and Test
 on: 
   push:
     branches:
-      - source
+      - main
   pull_request:
   
 
