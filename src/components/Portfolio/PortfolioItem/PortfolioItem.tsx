@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import classes from './PortfolioItem.module.css'
 
 import CompetencyBar from '../../UI/CompetencyBar/CompetencyBar';

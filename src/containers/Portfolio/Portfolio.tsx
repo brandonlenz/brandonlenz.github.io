@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { Component, ReactNode } from 'react';
 
 import classes from './Portfolio.module.css'

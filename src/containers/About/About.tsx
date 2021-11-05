@@ -1,4 +1,3 @@
-import * as React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import classes from './About.module.css';
@@ -9,17 +8,17 @@ import InlineLink from '../../components/UI/InlineLink/InlineLink';
 const About = () => (
     <div className={classes.About} data-testid="about-section">
         <div className={classes.Content}>
-            <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
+            <ScrollAnimation animateIn='animate__fadeIn' animateOnce={true}>
                 <div className={classes.FloatingHeadshot}>
                     <Headshot />
                 </div>
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn='fadeInUp' animateOnce={true}>
+            <ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
                 <div className={classes.HelloHeader}>Hi, I'm Brandon!</div>
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
+            <ScrollAnimation animateIn='animate__fadeInLeft' animateOnce={true}>
                 <p>
                     I'm an engineer with a passion for building tools and services that are as intuitive to use as they
                     are to develop and maintain.
@@ -27,7 +26,7 @@ const About = () => (
                     responsibility to use our skills in pursuit of improving the livelihoods of those around us.
                 </p>
             </ScrollAnimation>
-            <ScrollAnimation animateIn='fadeInRight' animateOnce={true}>
+            <ScrollAnimation animateIn='animate__fadeInRight' animateOnce={true}>
                 <p>
                     I know that a truly great experience, the kind that can have a real, positive impact, is achieved
                     through optimization of both form and function.
@@ -36,7 +35,7 @@ const About = () => (
                     After all, your fellow developers are users too.
                 </p>
             </ScrollAnimation>
-            <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
+            <ScrollAnimation animateIn='animate__fadeInLeft' animateOnce={true}>
                 <p>
                     Think of this page as a creative portfolio where I have the opportunity to showcase some of the
                     technologies I've learned. For a full professional summary and resume feel free to head over to

@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { FaRegEnvelope, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 import classes from './Contact.module.css'

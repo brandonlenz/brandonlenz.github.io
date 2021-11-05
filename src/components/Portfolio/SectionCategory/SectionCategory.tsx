@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import classes from './SectionCategory.module.css'
 
 import PortfolioItem, { Item } from '../PortfolioItem/PortfolioItem';
