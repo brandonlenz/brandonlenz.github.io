@@ -1,17 +1,18 @@
-name: Build and Test
+name: "Deploy"
 
 on: 
-  push:
+  workflow_run:
+    workflows: ["Build and Test"]
     branches: [main]
-  pull_request:
-  
+    types: [completed]
 
 jobs:
-  build-and-test:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
-      - name: Check out repository
+     - name: Check out repository
         uses: actions/checkout@v2
 
       - name: Set up Node.js
@@ -23,6 +24,8 @@ jobs:
       # The yarn cache is not node_modules
       - name: Install dependencies
         run: yarn --frozen-lockfile
-
-      - name: Run Jest tests
-        run: yarn test
+      
+      - name: Deploy to github pages
+        run: yarn deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
