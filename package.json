@@ -5,7 +5,7 @@
   "homepage": "https://brandonlenz.github.io/",
   "dependencies": {
     "@testing-library/dom": "^8.11.1",
-    "@testing-library/jest-dom": "^5.3.0",
+    "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.0",
     "@testing-library/react-hooks": "^7.0.0",
     "@testing-library/user-event": "^13.1.5",
