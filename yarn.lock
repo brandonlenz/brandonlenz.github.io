@@ -1707,14 +1707,14 @@
     lz-string "^1.4.4"
     pretty-format "^27.0.2"
 
-"@testing-library/jest-dom@^5.15.1":
-  version "5.15.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.15.1.tgz#4c49ba4d244f235aec53f0a83498daeb4ee06c33"
-  integrity sha512-kmj8opVDRE1E4GXyLlESsQthCXK7An28dFWxhiMwD7ZUI7ZxA6sjdJRxLerD9Jd8cHX4BDc1jzXaaZKqzlUkvg==
+"@testing-library/jest-dom@^5.16.2":
+  version "5.16.2"
+  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.16.2.tgz#f329b36b44aa6149cd6ced9adf567f8b6aa1c959"
+  integrity sha512-6ewxs1MXWwsBFZXIk4nKKskWANelkdUehchEOokHsN8X7c2eKXGw+77aRV63UU8f/DTSVUPLaGxdrj4lN7D/ug==
   dependencies:
     "@babel/runtime" "^7.9.2"
     "@types/testing-library__jest-dom" "^5.9.1"
-    aria-query "^4.2.2"
+    aria-query "^5.0.0"
     chalk "^3.0.0"
     css "^3.0.0"
     css.escape "^1.5.1"
@@ -1929,10 +1929,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@>=16.9.0", "@types/react@^17.0.37":
-  version "17.0.37"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.37.tgz#6884d0aa402605935c397ae689deed115caad959"
-  integrity sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg==
+"@types/react@*", "@types/react@>=16.9.0", "@types/react@^17.0.39":
+  version "17.0.39"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.39.tgz#d0f4cde092502a6db00a1cded6e6bf2abb7633ce"
+  integrity sha512-UVavlfAxDd/AgAacMa60Azl7ygyQNRwC/DsHZmKgNvPmRR5p70AJ5Q9EAmL2NWOJmeV+vVUI4IAP7GZrN8h8Ug==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -5244,9 +5244,9 @@ flush-write-stream@^1.0.0:
     readable-stream "^2.3.6"
 
 follow-redirects@^1.0.0:
-  version "1.14.5"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
-  integrity sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA==
+  version "1.14.8"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.8.tgz#016996fb9a11a100566398b1c6839337d7bfa8fc"
+  integrity sha512-1x0S9UVJHsQprFcEC/qnNzBLcIxsjAV905f/UkQxbclCsoTWlacCNOpQa/anodLl2uaEKFhfWOvM2Qg77+15zA==
 
 for-in@^1.0.2:
   version "1.0.2"
