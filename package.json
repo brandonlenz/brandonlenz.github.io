@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://brandonlenz.github.io/",
   "dependencies": {
-    "@testing-library/dom": "^8.12.0",
+    "@testing-library/dom": "^9.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/react-hooks": "^7.0.0",
