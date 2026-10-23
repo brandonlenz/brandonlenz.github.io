@@ -4,13 +4,19 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    pull-request-branch-name:
-      separator: "-"
     reviewers:
       - "brandonlenz"
     allow:
       - dependency-type: direct
+    groups:
+      non-major:
+        update-types: ["minor", "patch"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+    reviewers:
+      - "brandonlenz"
+    groups:
+      non-major:
+        update-types: ["minor", "patch"]
