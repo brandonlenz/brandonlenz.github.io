@@ -6,11 +6,7 @@ const noop = () => {}
 
 describe("App Component", () => {
   beforeEach(() => {
-    const intersectionObserverMock = () => ({
-      observe: noop,
-      disconnect: noop
-    })
-    window.IntersectionObserver = jest.fn().mockImplementation(intersectionObserverMock)
+    vi.stubGlobal('IntersectionObserver', class { observe = noop; disconnect = noop });
   })
 
   it('renders About, Portfolio, and Contact sections', () => {
