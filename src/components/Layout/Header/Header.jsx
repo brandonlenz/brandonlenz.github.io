@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 
 import classes from './Header.module.css'
